@@ -137,7 +137,7 @@ a {
   }
 
   &:hover {
-    color: #212121;
+    color: #212121;  // Default $link-color-hover;
     outline: 0;
   }
 }
