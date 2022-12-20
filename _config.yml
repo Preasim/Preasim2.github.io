@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise","default"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise","default"
 
 # Site Settings
 locale                   : "en-US"
@@ -132,15 +132,15 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
+    - label: "Email"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: preasim.kr@gmail.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: https://github.com/Preasim
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: https://www.instagram.com/pes_ing.0/
 
 
 # Reading Files
@@ -218,7 +218,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 15  # amount of posts to show / Defaults : 5
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -290,3 +290,11 @@ defaults:
       comments: # true
       share: true
       related: true
+
+# _pages                      : 해당 하단 영역이 새로 추가되었습니다.
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
