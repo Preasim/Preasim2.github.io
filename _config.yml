@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise","default"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "Demuu Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -105,10 +105,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Demuu_"
+  avatar           : "https://user-images.githubusercontent.com/77485397/208778372-265f30cd-1f78-47c3-a48c-e58db2c14d12.png"
+  bio              : "Demuu 웹공부 블로그"
+  location         : "Republic of Korea"
   email            :
   links:
     - label: "Email"
