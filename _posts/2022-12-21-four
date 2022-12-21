@@ -1,0 +1,71 @@
+---
+layout: single
+title: "JAVA 윈도우 기초세팅"
+permalink: /four/
+---
+
+<h2>windows 개발 환경 세팅</h2>
+1. <h2>JDK 설치</h2>
+<img src="https://user-images.githubusercontent.com/77485397/208794394-bb094977-4367-481b-b3c3-2cbeac927d6d.png">
+<a href="https://www.azul.com/downloads/?version=java-11-lts&os=windows&architecture=x86-64-bit&package=jdk">Zulu OpenJDK 다운로드 페이지</a>에 접속합니다. <br/>
+Java Version과 Operating System, Architecture를 선택합니다. <br/>
+Architecture는 내 컴퓨터 → 속성에서 64bit or 32bit 운영체제를 확인하고 선택합니다. <br/>
+선택을 모두 완료했다면 .msi 버튼을 눌러 다운로드받습니다. <br/>
+<br/>
+설치가 완료되었다면 cmd를 실행해줍니다.<br/>
+cmd에 java를 입력해 보세요. 아래와 같은 실행 결과를 확인할 수 있습니다.
+<img src="https://user-images.githubusercontent.com/77485397/208794754-1ffa1116-d2c4-43b0-91a9-baa009b9298b.png">
+
+2. <h2>Intellij 설치</h2>
+<a href="https://www.jetbrains.com/ko-kr/idea/download/#section=windows">IntelliJ 다운로드 페이지로 이동합니다.</a><br/>
+Ultimate 버전은 유료 버전이고, 지원하는 기능이 더 많습니다. <br/>
+하지만 학습용으로는 Community 버전도 충분하기 때문에 우리는 Community 버전을 사용합니다.
+<img src="https://user-images.githubusercontent.com/77485397/208794922-ab835790-b18b-4b88-954b-8384cf073905.png">
+필요한 설정을 선택해주고 Next를 누르면 설치가 완료됩니다. <br/>
+* Create Desktop Shortcut: 바로가기 생성
+* Update PATH variable: bin 폴더 경로를 윈도우 환경변수 PATH에 추가
+* Update Context Menu: 프로젝트로 폴더 열기 메뉴 추가
+* Create Associations: 프로그래밍 언어 확장자 선택
+
+3. <h2>JetBrains Toolbox 설치</h2>
+IDE를 손쉽게 설치할 수 있게 해주고, 설치한 IDE의 버전을 관리해주는 프로그램입니다. <br/>
+매 업데이트마다 강력하고 유용한 기능이 추가되거나 기존의 기능이 보완되기 때문에 IDE를 항상 최신 버전으로 유지할 필요가 있습니다. <br/>
+<br/>
+<a href="https://www.jetbrains.com/lp/toolbox/">JetBrains Toolbox download로 접속하여 다운로드 합니다.</a>
+JetBrains Toolbox 실행하기를 체크해주고 '마침'을 누릅니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798184-fabf5fc1-8233-41bf-9e5e-f7342555af72.png">
+<img src="https://user-images.githubusercontent.com/77485397/208798463-87aab3bf-c828-4f30-bc19-a816da195800.png">
+
+4. <h2>환경변수 설정</h2>
+<br/>
+1. 환경 변수를 검색하여 '시스템 환경 변수 편집'을 엽니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798564-b1a4b656-b590-4728-86b7-56daf4412963.png" alt="">
+<br/>
+2. 환경 변수를 눌러줍니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798651-685bd72e-d272-4776-b5a0-e6c41cb6e1c6.png" alt="">
+<br/>
+3. 시스템 변수 탭에서 새로 만들기를 클릭하고, 값을 입력해줍니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798733-442435f3-5bc3-47d1-b6da-ecdee639b1e7.png" alt="">
+* 아래의 값을 넣어주고, 확인을 눌러줍니다.
+    * 아래에 사용된 원화 기호는 가로선이 하나여야 합니다.
+    * 해당 기호의 입력 버튼은 Enter 키와 Back Space 사이에 위치합니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798874-4713e769-aaaa-4ff5-8600-a8086005d682.png" alt="">
+* 입력을 마치고 확인을 누르면 입력창이 닫히며 아래와 같은 화면이 나옵니다. 여기에서 시스템 변수에 방금 설정한 환경 변수가 제대로 만들어졌는지 확인합니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798921-04a362d1-49e8-4007-97be-bfc2ceedf78e.png" alt="">
+<br/>
+4. 시스템 변수에서 Path를 찾아 클릭하고, 편집을 눌러줍니다.
+<img src="https://user-images.githubusercontent.com/77485397/208798979-3bdb464b-5c2a-4820-85af-85582f569949.png" alt="">
+<br/>
+5. 새로만들기를 누른 다음, 아래의 경로를 추가해주시고, 확인을 눌러줍니다.
+* %JAVA_HOME%₩bin
+<img src="https://user-images.githubusercontent.com/77485397/208799061-bd6a312f-22d9-4587-b2e1-dd38d230de52.png" alt="">
+<br/>
+6. 방금 전 JAVA_HOME을 만들었던 것과 동일한 방법으로 아래의 환경 변수를 추가합니다.
+* 변수 이름 : CLASSPATH
+* 변수 값 : %JAVA_HOME%₩lib
+<img src="https://user-images.githubusercontent.com/77485397/208799232-4df3fb31-7d3c-489c-b91f-462782a84c6b.png" alt="">
+<br/>
+7.환경 변수 설정이 제대로 완료되었는지 확인합니다.
+* 작업표시줄의 검색바에서 cmd를 검색하여 명령 프롬프트를 실행한 후, path를 입력하고 엔터를 눌러줍니다.
+    * 아래와 같이 path의 결과 내에 설정했던 내역이 조회되면 설정이 제대로 된 것입니다.
+<img src="https://user-images.githubusercontent.com/77485397/208799360-5cfb211c-993a-4ceb-8a48-fc754bcec82b.png" alt="">
