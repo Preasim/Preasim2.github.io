@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise","default"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "Demuu Blog"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title_separator          : "|"
+subtitle                 : #"The world of Demuu" # site tagline that appears below site title in masthead
 name                     : "Demuu"
-description              : "An amazing website."
+description              : "데므의 작은 블로그"
 url                      : "https://Preasim.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -29,7 +29,7 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 future: true
 published: true
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus"   # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -107,15 +107,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Demuu_"
+  name             : "Demuu"
   avatar           : "https://user-images.githubusercontent.com/77485397/208778372-265f30cd-1f78-47c3-a48c-e58db2c14d12.png"
-  bio              : "Demuu 웹공부 블로그"
+  bio              : "데므의 작은 블로그"
   location         : "Republic of Korea"
-  email            :
+  email            : "preasim.kr@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "preasim.kr@gmail.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "preasim.kr@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -220,7 +220,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 10  # amount of posts to show / Defaults : 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -257,16 +257,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -290,6 +290,8 @@ defaults:
       comments:  true
       share: true
       related: true
+      show_date: true
+
 
 # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
   - scope:
@@ -298,3 +300,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+date_format: "%Y-%m-%d"

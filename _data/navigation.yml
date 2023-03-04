@@ -3,11 +3,15 @@
 main:
   #- title: "Home"
   #  url: "/"
-  - title: "Introduce"
+  - title: "Home"
     url: /about/
-  - title: "Category"
+  - title: "Blog"
     url: "/categories/"
-  - title: "Tags"
+  - title: "Github"
+    url: /tags/
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
     url: /tags/
 
 # main:
