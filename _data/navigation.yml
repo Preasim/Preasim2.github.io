@@ -7,8 +7,8 @@ main:
     url: http://demuu.dothome.co.kr/index.html
   - title: "Blog"
     url: https://preasim.github.io/
-  - title: "Github"
-    url: https://github.com/Preasim
+  - title: "Category"
+    url: /categories/
   - title: "Search"
     url: /search/
 
