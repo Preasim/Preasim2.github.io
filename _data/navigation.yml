@@ -4,15 +4,25 @@ main:
   #- title: "Home"
   #  url: "/"
   - title: "Home"
-    url: /about/
+    url: http://demuu.dothome.co.kr/index.html
   - title: "Blog"
-    url: "/categories/"
+    url: https://preasim.github.io/
   - title: "Github"
-    url: /tags/
-  - title: "Category"
-    url: /categories/
-  - title: "Tag"
-    url: /tags/
+    url: https://github.com/Preasim
+  - title: "Search"
+    url: /search/
+
+docs:
+- title: "Contents"
+  children:
+    - title: "Category"
+      url: /categories/
+    - title: "Tag"
+      url: /tags/
+    - title: "Java"
+      url: /tags/#java
+    - title: "Spring"
+      url: /tags/#spring
 
 # main:
 #   - title: "Quick-Start Guide"
