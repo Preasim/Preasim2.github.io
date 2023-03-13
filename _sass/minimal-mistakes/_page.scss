@@ -526,12 +526,12 @@ body {
 .page__related {
   @include clearfix();
   float: left;
-  margin-top: 2em;
+  margin-top: 5em; // 2023-03-13 Modified from 2 to 5 --------------
   padding-top: 1em;
   border-top: 1px solid $border-color;
 
   @include breakpoint($large) {
-    float: right;
+    float: left;  // 2023-03-13 Modified from right to left --------------------
     width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
