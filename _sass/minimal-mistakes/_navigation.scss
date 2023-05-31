@@ -504,6 +504,7 @@
      ========================================================================== */
 
 .toc {
+  margin-left: 30px;
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
@@ -515,7 +516,7 @@
   .nav__title {
     color: #fff;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: #000;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
