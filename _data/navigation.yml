@@ -4,9 +4,9 @@ main:
   #- title: "Home"
   #  url: "/"
   - title: "Home"
-    url: http://demuu.dothome.co.kr/index.html
-  - title: "Blog"
-    url: https://preasim.github.io/
+    url: https://preasim.github.io/Demuu/main-page
+  - title: "Gallery"
+    url: https://preasim.github.io/Demuu/gallery-page
   - title: "Category"
     url: /categories/
   - title: "Search"
