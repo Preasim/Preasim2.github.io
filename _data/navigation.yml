@@ -5,8 +5,8 @@ main:
   #  url: "/"
   - title: "Home"
     url: https://preasim.github.io/Demuu/main-page
-  - title: "Gallery"
-    url: https://preasim.github.io/Demuu/gallery-page
+  - title: "Blog"
+    url: https://preasim.github.io
   - title: "Category"
     url: /categories/
   - title: "Search"
