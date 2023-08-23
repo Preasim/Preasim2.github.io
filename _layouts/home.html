@@ -4,7 +4,18 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+<h3 class="archive__subtitle">추천 포스트</h3>
+
+<div class="entries-list">
+  {% for post in site.posts %}
+    {% if post.recommended %}
+      {% include archive-single.html type="list" %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+<h3 class="archive__subtitle" style="margin-top: 80px;">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
