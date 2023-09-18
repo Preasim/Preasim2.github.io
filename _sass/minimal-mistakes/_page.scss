@@ -28,7 +28,7 @@
 }
 
 .callout {
-  background-color: #616161;
+  background-color: #eeeeee;
   border-radius: 12px;
   text-align: center;
   padding: 2%;
@@ -36,7 +36,6 @@
 .callout-in {
   display: inline-block;
   text-align: left;
-  color: #fff;
 }
 .cImpact {
   background-color: #424242;
@@ -44,7 +43,10 @@
 }
 
 .callout-in p, .callout-in a {
-  color: #fff
+  color: #000;
+}
+.cImpact p, .cImpact a, .cImpact h2 {
+  color: #fff;
 }
 
 .utterances {
