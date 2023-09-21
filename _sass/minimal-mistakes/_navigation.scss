@@ -503,7 +503,8 @@
      ========================================================================== */
 
 .toc {
-  margin-left: 30px;
+  position: absolute;
+  right: -130px;
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
