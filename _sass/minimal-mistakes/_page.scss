@@ -65,6 +65,7 @@ strong {
   color: #fff;
 }
 
+
 .utterances {
   max-width: 100% !important;
 }
@@ -105,12 +106,18 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
+
+    // Default = calc(100% - #{$right-sidebar-width-narrow});
     width: calc(100%);
+
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
+
+    // Default = calc(100% - #{$right-sidebar-width});
     width: calc(100%);
+
     padding-right: $right-sidebar-width;
   }
 
@@ -214,8 +221,9 @@ body {
   :not(pre) > code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    font-size: 0.8em;
-    background: $code-background-color;
+    font-size: 1em;
+    // background: $code-background-color;
+    background: #e0e0e0;
     border-radius: $border-radius;
 
     &::before,
