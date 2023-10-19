@@ -1,0 +1,93 @@
+<section id="private-screen">
+  <div class="blur"></div>
+  <div class="txt-bx">
+    <h2>비공개 페이지</h2>
+    <p>본 포스트를 열람하실 권한이 없습니다.</p>
+  </div>
+
+  <div class="login-bx">
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="ID">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="password" autocomplete="current-password">
+      <input type="submit" value="Login" class="login-form-submit">
+    </form>
+  </div>
+</section>
+
+<script>
+  document.querySelector("#login-form").addEventListener('submit', function(e) {
+    e.preventDefault();
+    const privateScreen = document.querySelector('#private-screen');
+    const username = document.querySelector("#username-field").value;
+    const password = document.querySelector("#password-field").value;
+
+    if(username === "demuu1003" && password === "demuu02!") {
+      privateScreen.style.opacity = "0";
+      setTimeout(() => {
+        privateScreen.style.display = "none";
+      }, 500)
+    } else {
+      alert("아이디 혹은 비밀번호가 일치하지 않습니다.")
+    }
+  });
+
+</script>
+
+<style>
+
+#private-screen {
+  position: fixed;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  transition: all .5s;
+}
+
+#private-screen .blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  background-color: #424242;
+  opacity: .99;
+  z-index: -1;
+}
+
+#private-screen .txt-bx {
+  transform: translateY(100%);
+}
+#private-screen .txt-bx h2 {font-size: 1.9em;}
+#private-screen .txt-bx p {font-size: 1.35em;}
+
+#login-form {
+  background-color: inherit;
+}
+
+.login-bx {
+  transform: translateY(160%);
+}
+
+.login-bx .login-form-field {
+  width: 400px;
+  height: 28px;
+  background-color: #fefefe;
+  display: block;
+  margin: 20px auto;
+}
+
+.login-form-submit {
+  display: block;
+  margin: 0 auto;
+  background-color: #fefefe;
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px){
+  .login-bx .login-form-field {width: 50vw;}
+}
+</style>
